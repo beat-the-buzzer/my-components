@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "npm run build:js && npm run build:css",
     "lint": "vue-cli-service lint",
-    "build:js": "webpack --config ./webpack.config.js"
+    "build:js": "webpack --config ./webpack.config.js",
+    "build:css": "npx gulp sass"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -22,6 +23,10 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.0",
     "vue-template-compiler": "^2.6.14",
     "webpack-cli": "^5.0.1"
   },

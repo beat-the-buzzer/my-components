@@ -18,7 +18,7 @@ async function makeList(dirPath, list) {
 makeList('components/lib', list)
 
 module.exports = {
-  mode: 'production',
+  mode: 'development', // production
   entry: list,
   output: {
     filename: '[name].umd.js',
