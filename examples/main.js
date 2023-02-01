@@ -7,7 +7,7 @@ import Demo from '../components/lib/demo/index.js'
 import Card from '../components/lib/card/index.js'
 
 Vue.use(Demo) // Demo.install
-Vue.use(Card) // Demo.install
+Vue.use(Card) // Card.install
 
 Vue.config.productionTip = false
 
