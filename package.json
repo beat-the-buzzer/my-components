@@ -7,7 +7,9 @@
     "build": "npm run build:js && npm run build:css",
     "lint": "vue-cli-service lint",
     "build:js": "webpack --config ./webpack.config.js",
-    "build:css": "npx gulp sass"
+    "build:css": "npx gulp sass",
+    "publishToLocal": "npm run build && yalc push",
+    "watch": "nodemon --ignore dist/ --ignore node_modules/ --watch packages/ -C -e js,vue,scss --debug -x 'npm run publishToLocal'"
   },
   "dependencies": {
     "core-js": "^3.8.3",
