@@ -1,7 +1,11 @@
 {
-  "name": "my-components",
+  "name": "my-components-only-test",
   "version": "0.1.0",
-  "private": true,
+  "desciption": "测试组件库",
+  "main": "dist/index.umd.js",
+  "keywords": ["vue"],
+  "author": "beat-the-buzzer",
+  "files": ["dist", "components"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run build:js && npm run build:css",

@@ -1,4 +1,21 @@
-# my-components
+# my-components 组件库
+
+## 安装
+
+```shell
+npm i my-components
+```
+
+## 引用
+```js
+import 'my-components/dist/css/index.css'
+import MUI from 'my-components'
+Vue.use(MUI)
+
+import 'my-components/dist/css/demo.css'
+import { Demo } from 'my-components'
+Vue.use(Demo)
+```
 
 ## 组件代码的定义和引用
 
@@ -38,6 +55,17 @@ Vue.use(Card) // Card.install
  - 先判断是否支持Node.js模块格式，即判断exports是否存在
  - 再判断是否支持AMD，即判断define是否存在
  - 若前两个都不存在，则将模块挂载到全局，即window或者global
+
+## 发布到npm
+
+### package.json/README.md的编写
+
+### 发布命令
+
+```shell
+npm login # 注意源需要是npm，不能是淘宝镜像或者cnpm
+npm publish # 注意发布的版本号不得低于上个版本 不得和已有的库名重复
+```
 
 ## 如何调试组件
 
