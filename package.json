@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "desciption": "测试组件库",
   "main": "dist/index.umd.js",
-  "keywords": ["vue"],
+  "keywords": [
+    "vue"
+  ],
   "author": "beat-the-buzzer",
-  "files": ["dist", "components"],
+  "files": [
+    "dist",
+    "components"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run build:js && npm run build:css",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "lint": "vue-cli-service lint",
     "build:js": "webpack --config ./webpack.config.js",
     "build:css": "npx gulp sass",
@@ -17,6 +24,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "node-sass": "^8.0.0",
     "sass-loader": "5",
     "vue": "^2.6.14",
     "vue-loader": "15.9.8"
@@ -34,6 +42,7 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.58.0",
     "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.9.8",
     "webpack-cli": "^5.0.1"
   },
   "eslintConfig": {
